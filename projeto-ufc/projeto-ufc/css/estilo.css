@@ -1,0 +1,211 @@
+/* UFC - Estilo Basico e Reduzido */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #fff;
+  line-height: 1.4;
+}
+
+header {
+  background-color: #000;
+  border-bottom: 2px solid #d20a0a;
+  padding: 10px 15px;
+}
+
+.topo-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #d20a0a;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  padding: 4px 8px;
+}
+
+nav a:hover, .link-ativo {
+  background-color: #d20a0a;
+  border-radius: 3px;
+}
+
+.link-externo {
+  color: #d4af37;
+  border: 1px solid #d4af37;
+  border-radius: 3px;
+}
+
+.container {
+  max-width: 850px;
+  margin: 15px auto;
+  padding: 0 10px;
+}
+
+h1 {
+  font-size: 22px;
+  border-left: 4px solid #d20a0a;
+  padding-left: 8px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 18px;
+  margin: 15px 0 8px 0;
+}
+
+p {
+  color: #bbb;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #d20a0a;
+  color: #fff;
+  padding: 6px 12px;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #900;
+}
+
+.linha-cards {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1 1 220px;
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #333;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 3px;
+  margin-bottom: 8px;
+}
+
+.grid-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+}
+
+.grid-galeria img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+#tabela-dados {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+#tabela-dados th, #tabela-dados td {
+  border: 1px solid #333;
+  padding: 8px;
+  font-size: 13px;
+}
+
+#tabela-dados th {
+  background-color: #000;
+  color: #d4af37;
+}
+
+#form-contato {
+  background-color: #222;
+  padding: 15px;
+  border-radius: 4px;
+  max-width: 500px;
+}
+
+.campo {
+  margin-bottom: 10px;
+}
+
+.campo label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+
+.campo input, .campo select, .campo textarea {
+  width: 100%;
+  padding: 6px;
+  background-color: #000;
+  border: 1px solid #444;
+  color: #fff;
+  font-size: 13px;
+}
+
+.campo input:hover {
+  border-color: #888;
+}
+
+.campo input:focus {
+  border-color: #d20a0a;
+  outline: none;
+}
+
+.campo input:invalid:focus {
+  border-color: #f00;
+}
+
+video, audio {
+  width: 100%;
+  max-width: 500px;
+}
+
+footer {
+  background-color: #000;
+  text-align: center;
+  padding: 15px;
+  border-top: 2px solid #d20a0a;
+  margin-top: 30px;
+  font-size: 12px;
+  color: #777;
+}
+
+footer a {
+  color: #d4af37;
+}
+
+@media (max-width: 768px) {
+  .topo-flex, .linha-cards {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,87 @@
+<!-- UFC - Pagina Contato - Formulario + LocalStorage + DOM -->
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - UFC</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+  <header>
+    <div class="topo-flex">
+      <div class="logo">UFC <span>PORTAL</span></div>
+      <nav class="d-flex flex-wrap gap-1">
+        <a href="index.html">Início</a>
+        <a href="lutadores.html">Lutadores</a>
+        <a href="categorias.html">Categorias</a>
+        <a href="campeoes.html">Campeões</a>
+        <a href="eventos.html">Eventos</a>
+        <a href="historia.html">História</a>
+        <a href="regras.html">Regras</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="treino.html">Treino</a>
+        <a href="contato.html" class="link-ativo">Contato</a>
+        <a href="https://www.ufc.com.br" target="_blank" class="link-externo">UFC ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Fã Clube do UFC</h1>
+    <p>Cadastre-se no fã clube. Seus dados ficam salvos neste navegador.</p>
+
+    <form id="form-contato">
+      <div class="campo">
+        <label class="form-label" for="nome">Nome Completo:</label>
+        <input type="text" id="nome" class="form-control" placeholder="Digite seu nome" required minlength="3">
+      </div>
+
+      <div class="campo">
+        <label class="form-label" for="email">E-mail:</label>
+        <input type="email" id="email" class="form-control" placeholder="seu-email@teste.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+      </div>
+
+      <div class="campo">
+        <label class="form-label" for="categoria">Categoria Favorita:</label>
+        <select id="categoria" class="form-select" required>
+          <option value="">Selecione...</option>
+          <option value="Peso Pena">Peso Pena</option>
+          <option value="Peso Leve">Peso Leve</option>
+          <option value="Peso Meio-Pesado">Peso Meio-Pesado</option>
+          <option value="Peso Pesado">Peso Pesado</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label class="form-label" for="mensagem">Mensagem / Palpite:</label>
+        <textarea id="mensagem" class="form-control" rows="2" placeholder="Deixe sua mensagem"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-danger">Cadastrar Fã</button>
+    </form>
+
+    <div id="aviso" class="alert alert-success d-none" style="margin-top: 10px; max-width: 500px;">Cadastro salvo com sucesso!</div>
+
+    <h2 style="margin-top: 25px;">Fãs Cadastrados</h2>
+    <table id="tabela-dados">
+      <tr>
+        <th>Nome</th>
+        <th>E-mail</th>
+        <th>Categoria</th>
+      </tr>
+      <tbody id="tabela-corpo">
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 UFC Portal - Universidade Positivo | <a href="https://www.ufc.com.br" target="_blank">UFC Oficial</a></p>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/principal.js"></script>
+</body>
+</html>
