@@ -1,0 +1,74 @@
+<!-- UFC - Pagina Categorias - Flexbox -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categorias - UFC</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilo.css">
+  <style>
+    .item-cat { background-color: #222; padding: 10px; margin-bottom: 8px; border-left: 4px solid #d20a0a; display: flex; justify-content: space-between; }
+    .peso { color: #d4af37; font-weight: bold; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="topo-flex">
+      <div class="logo">UFC <span>PORTAL</span></div>
+      <nav class="d-flex flex-wrap gap-1">
+        <a href="index.html">Início</a>
+        <a href="lutadores.html">Lutadores</a>
+        <a href="categorias.html" class="link-ativo">Categorias</a>
+        <a href="campeoes.html">Campeões</a>
+        <a href="eventos.html">Eventos</a>
+        <a href="historia.html">História</a>
+        <a href="regras.html">Regras</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="treino.html">Treino</a>
+        <a href="contato.html">Contato</a>
+        <a href="https://www.ufc.com.br" target="_blank" class="link-externo">UFC ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Categorias de Peso</h1>
+    <p>Limites de peso oficiais de cada divisão:</p>
+
+    <div class="item-cat">
+      <span>Peso Mosca</span>
+      <span class="peso">Até 56,7 kg</span>
+    </div>
+
+    <div class="item-cat">
+      <span>Peso Pena</span>
+      <span class="peso">Até 65,8 kg</span>
+    </div>
+
+    <div class="item-cat">
+      <span>Peso Leve</span>
+      <span class="peso">Até 70,3 kg</span>
+    </div>
+
+    <div class="item-cat">
+      <span>Peso Meio-Pesado</span>
+      <span class="peso">Até 93,0 kg</span>
+    </div>
+
+    <div class="item-cat">
+      <span>Peso Pesado</span>
+      <span class="peso">Até 120,2 kg</span>
+    </div>
+
+    <p style="margin-top: 15px;"><a href="campeoes.html" class="btn btn-danger">Ver Campeões</a></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 UFC Portal - Universidade Positivo | <a href="https://www.ufc.com.br" target="_blank">UFC Oficial</a></p>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
